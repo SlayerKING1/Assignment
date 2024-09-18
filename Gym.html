@@ -1,0 +1,299 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meata http-equip="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" referrerpolicy="no-referrer" />
+        <title>Turbo Gym</title>
+</head>
+
+<body>
+    <style>
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background: black;
+        }
+
+        .header {
+            padding: 10px;
+            background: #333;
+            color: white;
+            width: 100%;
+        }
+
+        .mid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mid img {
+            width: 50px;
+            height: 50px;
+            border-radius: 15px;
+        }
+
+        .mid li {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            display: inline-block;
+            margin: 0px 10px
+        }
+
+        .mid a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+        }
+        .mid li i{
+            display: none;
+        }
+        .container {
+            padding: 1px 15px;
+            text-align: center;
+            height: calc(100vh - 10vh);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container h2 span {
+            font-size: 55px;
+            font-weight: bold;
+            color: orangered;
+        }
+
+        .container h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            width: 50%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+        }
+
+        input[type="text"]:focus {
+            background-color: rgb(255, 255, 255);
+        }
+
+        button {
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #555;
+            transition: all 0.3s ease-in-out;
+            transform: scale(1.02);
+            box-shadow: 0 7px 7px rgba(24, 126, 117, 0.5);
+        }
+
+        input[type="text"]:hover {
+            background-color: rgba(24, 126, 117, 0.5);
+        }
+        @media (max-width:1424px) {
+            .mid {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 35px;
+            }
+
+            .container h2 span {
+                font-size: 75px;
+                font-weight: bold;
+                color: rgb(118, 30, 201);
+            }
+
+            .container h2 {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+
+            form {
+                width: 45%;
+                margin: 20px auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            button:hover {
+                background: #555;
+                transition: all 0.3s ease-in-out;
+                transform: scale(1.02);
+                box-shadow: 0 7px 7px rgb(118, 30, 201);
+            }
+
+            input[type="text"]:hover {
+                background-color: rgb(118, 30, 201);
+            }
+        }
+        @media (max-width:1024px) {
+            .mid {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 35px;
+            }
+
+            .container h2 span {
+                font-size: 65px;
+                font-weight: bold;
+                color: rgb(144, 214, 32);
+            }
+
+            .container h2 {
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+
+            form {
+                width: 45%;
+                margin: 20px auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            button:hover {
+                background: #555;
+                transition: all 0.3s ease-in-out;
+                transform: scale(1.02);
+                box-shadow: 0 7px 7px rgb(144, 214, 32);
+            }
+
+            input[type="text"]:hover {
+                background-color: rgb(144, 214, 32);
+            }
+        }
+
+        @media (max-width:786px) {
+            .mid {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 35px;
+            }
+
+            .container h2 span {
+                font-size: 45px;
+                font-weight: bold;
+                color: rgb(255, 0, 34);
+            }
+
+            .container h2 {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            form {
+                width: 45%;
+                margin: 20px auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            button:hover {
+                background: #555;
+                transition: all 0.3s ease-in-out;
+                transform: scale(1.02);
+                box-shadow: 0 7px 7px rgba(218, 26, 13, 0.5);
+            }
+
+            input[type="text"]:hover {
+                background-color: rgba(218, 26, 13, 0.5);
+            }
+        }
+        @media (max-width:480px) {
+            .mid li a{
+                display: none;
+            }
+            .mid li button{
+                display: none;
+            }
+            .mid li i{
+                display:inline-block;
+            }
+            .container h2 span {
+                font-size: 35px;
+                font-weight: bold;
+                color: rgb(0, 174, 255);
+            }
+
+            .container h2 {
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+            form {
+                width: 55%;
+                margin: 20px auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            button:hover {
+                background: #555;
+                transition: all 0.3s ease-in-out;
+                transform: scale(1.02);
+                box-shadow: 0 7px 7px rgb(0, 174, 255);
+            }
+
+            input[type="text"]:hover {
+                background-color: rgb(0, 174, 255);
+            }
+
+        }
+    </style>
+
+    <nav class="header">
+        <div class="mid">
+            <div><img src="./Img/logo.png"></div>
+            <ul>
+                <li><a href="./Gym.html">Home</a></li>
+                <li><a href="">Fitness Calculator</a></li>
+                <li><a href="">About us</a></li>
+                <li><button class="btn">Call Us</button></li>
+                <li><button class="btn">Email Us</button></li>
+                <li><i class="ri-menu-3-line"></i></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h2><span>Your Body Is The Engine</span></h2>
+        <h2>Come Join Us And Let Your Engines Roar.</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter ur First Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter ur Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Email ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter ur Phone.NO ">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+
+    </div>
+
+</html>
